@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         height:60,
         width:70,
-        padding: 8,
+        padding:7,
         textAlign: 'center',
         backgroundColor: '#888',
         borderWidth: 2,
@@ -33,8 +33,10 @@ const styles = StyleSheet.create({
     },
   
     buttonDouble:{
-      height: (Dimensions.get('window').width  /  5) *2,
+        height:130,
+        width:70,
       borderRadius:10,
+      
     },
 
     buttonTriple:{          
@@ -44,6 +46,8 @@ const styles = StyleSheet.create({
         borderRadius:10,
         marginRight:10,
         left: 280,
+        margin:1,
+        marginBottom:8,
         fontSize:18,
         padding: 12      
          
