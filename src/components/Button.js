@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         height: Dimensions.get('window').width  /  5,
         width: Dimensions.get('window').width / 5,
-        padding: 10,
+        padding: 8,
         textAlign: 'center',
         backgroundColor: '#888',
         borderWidth: 2,
@@ -41,20 +41,15 @@ const styles = StyleSheet.create({
     },
 
     buttonTriple:{
-        width:400,
-        left:30, 
-        height:80, 
-        marginTop:10,
+        width: Dimensions.get('window').width / 1,       
         fontSize: 40,
         color:'#fff', 
-        borderRadius:10,
         backgroundColor:'#FF8C00',
         padding: 10,
-       
+        
          
     },
 
-   
 })
 
 export default props => {
@@ -63,6 +58,7 @@ export default props => {
     if (props.triple) stylesButton.push(styles.buttonTriple)
     if (props.operation) stylesButton.push(styles.operationButton)
     if(props. buttonsesquerda) stylesButton.push(styles.buttonsesquerda)
+   
     return (
         <TouchableHighlight onPress={() => props.onClick(props.label)}>
             <Text style={stylesButton}> {props.label} </Text>

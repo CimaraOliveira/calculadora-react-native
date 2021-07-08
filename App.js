@@ -71,26 +71,26 @@ import React, {Component} from 'react';
            </View>
           <View style={styles.buttons}>
             <Button label='CE/C' triple onClick={this.clearMemory} />
-            <Button label='7' onClick={() => this.addDigit(7)} />
-            <Button label='8' onClick={() => this.addDigit(8)} />
-            <Button label='9' onClick={() => this.addDigit(9)} />
-            <Button label='%' onClick={() => this.addDigit('%')} />
-            <Button label='>' onClick={() => this.addDigit('>')} />
-            <Button label='4' onClick={() => this.addDigit(4)} />
-            <Button label='5' onClick={() => this.addDigit(5)} />
-            <Button label='6' onClick={() => this.addDigit(6)} />
-            <Button label='x' operation onClick={() => this.setOperation('*')} />
-            <Button label='÷' operation onClick={() => this.setOperation('/')} />
-            <Button label='1' onClick={() => this.addDigit(1)} />
-            <Button label='2' onClick={() => this.addDigit(2)} />
-            <Button label='3' onClick={() => this.addDigit(3)} />
-            <Button label='+' double onClick={() => this.setOperation('+') } />
-              <Button label='-' operation onClick={() => this.setOperation('-')} />
-              
-            <Button label='0'   buttonsesquerda  onClick={() => this.addDigit(0)} />
-            <Button label='00' onClick={() =>this.addDigit('00')} />
-            <Button label='.' onClick={() =>this.addDigit('.')} />
-            <Button label='=' operation onClick={this.setOperation} />
+            <Button label='7'   onClick={() => this.addDigit(7)} />
+            <Button label='8'   onClick={() => this.addDigit(8)} />
+            <Button label='9'   onClick={() => this.addDigit(9)} />
+            <Button label='%'   onClick={() => this.addDigit('%')} />
+            <Button label='>'   onClick={() => this.addDigit('>')} />
+            <Button label='4'   onClick={() => this.addDigit(4)} />
+            <Button label='5'  onClick={() => this.addDigit(5)} />
+            <Button label='6'   onClick={() => this.addDigit(6)} />
+            <Button label='x'  operation onClick={() => this.setOperation('*')} />
+            <Button label='÷'  operation onClick={() => this.setOperation('/')} />
+            <Button label='1'    onClick={() => this.addDigit(1)} />
+            <Button label='2'   onClick={() => this.addDigit(2)} />
+            <Button label='3'   onClick={() => this.addDigit(3)} />
+            <Button label='+'    double onClick={() => this.setOperation('+') } />
+              <Button label='-'  operation onClick={() => this.setOperation('-')} />              
+            <Button label='0'   onClick={() => this.addDigit(0)} />
+            <Button label='00'   operation  onClick={() =>this.addDigit('00')} />
+            <Button label='.'   operation  onClick={() =>this.addDigit('.')} />
+            <Button label='='  operation  operation onClick={this.setOperation} />
+           
           
           
 
@@ -103,7 +103,7 @@ import React, {Component} from 'react';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'black'
+    backgroundColor:'#000000'
   },
   buttons: {
     flexDirection: 'row',
@@ -111,18 +111,16 @@ const styles = StyleSheet.create({
   },
   box:{  
     height:100,
-    margin:30,
-    left:0,    
-    top:11, 
-    marginTop:1,
-    borderRadius:10,
-    backgroundColor: '#FFFFFF',
-    width:310,  
-    margin:30,    
-    right:80 ,   
+    margin:30,   
+    top:10, 
+    left: 1,
+    marginTop: 10,
+    borderRadius:20,
+    backgroundColor: '#fffaf0',
+    justifyContent: 'center',
+    width:314,  
 
   },
-
 
 });
     
