@@ -4,8 +4,8 @@ import{StyleSheet,Text,Dimensions, TouchableHighlight} from 'react-native'
 const styles = StyleSheet.create({
     button  : {
         fontSize: 40,
-        height: Dimensions.get('window').width  /  5,
-        width: Dimensions.get('window').width / 5,
+        height:60,
+        width:70,
         padding: 8,
         textAlign: 'center',
         backgroundColor: '#888',
@@ -30,9 +30,6 @@ const styles = StyleSheet.create({
         width: Dimensions.get('window').width / 5,   
         borderRadius:10, 
       
-      
-        
-
     },
   
     buttonDouble:{
@@ -40,13 +37,15 @@ const styles = StyleSheet.create({
       borderRadius:10,
     },
 
-    buttonTriple:{
-        width: Dimensions.get('window').width / 1,       
-        fontSize: 40,
-        color:'#fff', 
-        backgroundColor:'#FF8C00',
-        padding: 10,
-        
+    buttonTriple:{          
+        backgroundColor:'#ff7900',
+        height:60,
+        width:70,         
+        borderRadius:10,
+        marginRight:10,
+        left: 280,
+        fontSize:18,
+        padding: 12      
          
     },
 

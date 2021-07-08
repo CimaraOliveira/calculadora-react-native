@@ -69,8 +69,12 @@ import React, {Component} from 'react';
           <View style={styles.box}>
             <Display  value={this.state.displayValue}/>
            </View>
+           <Button label='CE/C' triple onClick={this.clearMemory} />
+           <View>
+
+           </View>
           <View style={styles.buttons}>
-            <Button label='CE/C' triple onClick={this.clearMemory} />
+                        
             <Button label='7'   onClick={() => this.addDigit(7)} />
             <Button label='8'   onClick={() => this.addDigit(8)} />
             <Button label='9'   onClick={() => this.addDigit(9)} />
@@ -123,4 +127,3 @@ const styles = StyleSheet.create({
   },
 
 });
-    

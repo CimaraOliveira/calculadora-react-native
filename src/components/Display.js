@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#888',
         alignItems:'flex-end',          
         height:90,       
-        borderRadius:10, 
+         borderRadius:10, 
             
     },
     displayValue:{
